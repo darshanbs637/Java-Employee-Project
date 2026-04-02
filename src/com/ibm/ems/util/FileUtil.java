@@ -9,14 +9,16 @@ public class FileUtil {
 
     private static final String FILE_NAME = "employees.txt";
 
-    // ✅ Save employees to file
+   
     public static void saveToFile(List<Employee> employees) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE_NAME))) {
 
             for (Employee e : employees) {
-                bw.write(e.toString()); // format: id,name,salary,type
+                bw.write(e.toString()); 
                 bw.newLine();
             }
+            
+            
 
             System.out.println("Employees saved successfully.");
 
@@ -25,7 +27,7 @@ public class FileUtil {
         }
     }
 
-    // ✅ Load employees from file
+    
     public static List<Employee> loadFromFile() {
         List<Employee> employees = new ArrayList<>();
 

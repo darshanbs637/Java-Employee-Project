@@ -70,6 +70,8 @@ public class EMSApp {
 
                         service.updateEmployee(id, name, salary);
                         break;
+                        
+                        
 
                     case 4:
                         System.out.print("Enter ID: ");

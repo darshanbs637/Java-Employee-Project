@@ -49,16 +49,14 @@ public class EmployeeService {
 	        employees.remove(e);
 	    }
 
-	    // Search by Name
-	    public void searchByName(String name) {
-	        boolean found = false;
+	 // Search by ID
+	    public Employee searchById(int id) throws EmployeeNotFoundException {
 	        for (Employee e : employees) {
-	            if (e.getName().equalsIgnoreCase(name)) {
-	                System.out.println(e);
-	                found = true;
+	            if (e.getId() == id) {
+	                return e;
 	            }
 	        }
-	        if (!found) System.out.println("No match found.");
+	        throw new EmployeeNotFoundException("Employee not found with ID: " + id);
 	    }
 
 	    public List<Employee> getEmployees() {

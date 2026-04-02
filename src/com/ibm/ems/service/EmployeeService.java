@@ -1,7 +1,6 @@
 package com.ibm.ems.service;
-import com.ibm.ems.model.*;
 import com.ibm.ems.exception.EmployeeNotFoundException;
-
+import com.ibm.ems.model.*;
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -73,6 +72,7 @@ public class EmployeeService {
 	            executor.submit(() -> {
 	                double total = e.calculateSalary();
 	                System.out.println(e.getName() + " Final Salary: " + total);
+					e.setSalary(total);
 	            });
 	        }
 

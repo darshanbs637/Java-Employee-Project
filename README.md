@@ -1,7 +1,11 @@
 # IBM Employee Management System (EMS)
 ## Capsule Project (Core Java)
-
----
+Team:
+  Darshan B S
+--VP, Rahees Ahammed,
+  S N, Akul,
+  Saji,Amal,
+  Mogaveera, Nayan
 
 ## 📌 Project Overview
 

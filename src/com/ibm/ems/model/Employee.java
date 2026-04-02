@@ -1,9 +1,9 @@
 package com.ibm.ems.model;
 
 public abstract class Employee {
-    protected int id;
-    protected String name;
-    protected double salary;
+    private int id;
+    private String name;
+    private double salary;
 
     public Employee(int id, String name, double salary) {
         this.id = id;

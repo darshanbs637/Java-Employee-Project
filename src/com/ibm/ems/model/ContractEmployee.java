@@ -8,6 +8,6 @@ public class ContractEmployee extends Employee {
 
     @Override
     public double calculateSalary() {
-        return salary;
+        return getSalary();
     }
 }

@@ -8,6 +8,6 @@ public class PermanentEmployee extends Employee {
 
     @Override
     public double calculateSalary() {
-        return salary + (salary * 0.10);
+        return getSalary() + (getSalary() * 0.10);
     }
 }

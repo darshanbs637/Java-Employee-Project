@@ -1,2 +1,11 @@
+<<<<<<< HEAD
+100,Darshan,80000.0,PermanentEmployee
+101,Sai,82000.0,ContractEmployee
+102,sonu,90000.0,PermanentEmployee
+104,Tonu,50000.0,PermanentEmployee
+78,was,1233.0,PermanentEmployee
+10,asdfgh,45000.0,PermanentEmployee
+=======
 1,Darshan,100000.0,PermanentEmployee
 123,Akul,20000.0,ContractEmployee
+>>>>>>> 84468ab53e7829641bd0718799f9144f1b240270

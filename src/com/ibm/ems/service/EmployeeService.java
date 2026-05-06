@@ -42,11 +42,7 @@ public class EmployeeService {
 	        e.setSalary(salary);
 	    }
 
-	    // Delete
-	    public void deleteEmployee(int id) throws EmployeeNotFoundException {
-	        Employee e = findById(id);
-	        employees.remove(e);
-	    }
+
 
 	 // Search by ID
 	    public Employee searchById(int id) throws EmployeeNotFoundException {
@@ -56,6 +52,13 @@ public class EmployeeService {
 	            }
 	        }
 	        throw new EmployeeNotFoundException("Employee not found with ID: " + id);
+	    }
+
+			    // Delete
+	    public void deleteEmployee(int id) throws EmployeeNotFoundException {
+	        Employee e = findById(id);
+			//delete employee
+	        employees.remove(e);
 	    }
 
 	    public List<Employee> getEmployees() {

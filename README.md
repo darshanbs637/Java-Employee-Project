@@ -1,49 +1,18 @@
 # IBM Employee Management System (EMS)
 ## Capsule Project (Core Java)
-
----
+Team:
+  Darshan B S
+--VP, Rahees Ahammed,
+  S N, Akul,
+  Saji,Amal,
+  Mogaveera, Nayan
 
 ## 📌 Project Overview
 
 This is a **mini Employee Management System (EMS)** to be built using **Core Java (console-based)**.
-
-- 👥 Team Size: 4–5 members  
 - ⏱ Duration: 3–4 hours  
-- 🎯 Goal: Apply Core Java concepts in a **simple, working application**
+- 🎯 Goal: Apply Core Java concepts in a working application
 
----
-
-## 👥 Teams
-
-### Team 1
-- Bala, Sandesh
-- Reddy, Dhoddi Mallikarjuna
-- VP, Rahees Ahammed
-- S, Mohith
-- Darshan, B S
-
-### Team 2
-- S N, Akul
-- B M, Poorvika
-- Dama, Pavan
-- Govardhan, Majjiga
-- Vamsikrishna, Valluri
-
-### Team 3
-- Kottam, Gnaneswar
-- Prasad M T, Saketh
-- Raju, Vishnu
-- C D, Nisha
-- PERAM, Tarun Kumar Reddy
-
-### Team 4
-- Mogaveera, Nayan
-- SAIBHARATH, K
-- Kumar, MuppalaMuppala Anil
-- Krishnamanikanta
-- Saji, Amal
-
----
 
 ## 🎯 Objective
 

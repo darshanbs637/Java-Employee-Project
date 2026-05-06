@@ -70,6 +70,8 @@ public class EMSApp {
 
                         service.updateEmployee(id, name, salary);
                         break;
+                        
+                        
 
                     case 4:
                         System.out.print("Enter ID: ");
@@ -77,15 +79,9 @@ public class EMSApp {
                         break;
 
                     case 5:
-                        System.out.print("Enter ID: ");
-                        int searchId = sc.nextInt();
-
-                        try {
-                            Employee emp = service.searchById(searchId);
-                            System.out.println("Found: " + emp);
-                        } catch (EmployeeNotFoundException e) {
-                            System.out.println(e.getMessage());
-                        }
+                        sc.nextLine();
+                        System.out.print("Enter Name: ");
+                        service.searchByName(sc.nextLine());
                         break;
 
                     case 6:

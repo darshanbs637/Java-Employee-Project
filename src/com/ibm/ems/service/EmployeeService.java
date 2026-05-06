@@ -44,14 +44,16 @@ public class EmployeeService {
 
 
 
-	 // Search by ID
-	    public Employee searchById(int id) throws EmployeeNotFoundException {
+	    // Search by Name
+	    public void searchByName(String name) {
+	        boolean found = false;
 	        for (Employee e : employees) {
-	            if (e.getId() == id) {
-	                return e;
+	            if (e.getName().equalsIgnoreCase(name)) {
+	                System.out.println(e);
+	                found = true;
 	            }
 	        }
-	        throw new EmployeeNotFoundException("Employee not found with ID: " + id);
+	        if (!found) System.out.println("No match found.");
 	    }
 
 			    // Delete

@@ -81,7 +81,7 @@ public class EMSApp {
                     case 5:
                         sc.nextLine();
                         System.out.print("Enter Name: ");
-                        service.searchByName(sc.nextLine());
+                        service.searchByIdOrName(sc.nextLine());
                         break;
 
                     case 6:

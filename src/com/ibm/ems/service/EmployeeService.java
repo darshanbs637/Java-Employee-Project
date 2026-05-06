@@ -14,6 +14,8 @@ public class EmployeeService {
 	    public void addEmployee(Employee emp) {
 	        employees.add(emp);
 	    }
+	    
+	    
 
 	    // View
 	    public void viewEmployees() {
@@ -45,15 +47,46 @@ public class EmployeeService {
 
 
 	    // Search by Name
-	    public void searchByName(String name) {
+//	    public void searchByName(String name) {
+//	        boolean found = false;
+//	        for (Employee e : employees) {
+//	            if (e.getName().equalsIgnoreCase(name)) {
+//	                System.out.println(e);
+//	                found = true;
+//	            }
+//	        }
+//	        if (!found) System.out.println("No match found.");
+//	    }
+	    
+	    public void searchByIdOrName(String input) {
+
 	        boolean found = false;
+
 	        for (Employee e : employees) {
-	            if (e.getName().equalsIgnoreCase(name)) {
-	                System.out.println(e);
-	                found = true;
+
+	            // check if input is a number (ID search)
+	            if (input.matches("\\d+")) {
+	                int id = Integer.parseInt(input);
+	                if (e.getId() == id) {
+	                    System.out.println(e);
+	                    found = true;
+	                }
+	            }
+	            // otherwise, name search (first / last / full)
+	            else {
+	                String empName = e.getName().toLowerCase();
+	                String search = input.toLowerCase();
+
+	                if (empName.contains(search)) {
+	                    System.out.println(e);
+	                    found = true;
+	                }
 	            }
 	        }
-	        if (!found) System.out.println("No match found.");
+
+	        if (!found) {
+	            System.out.println("No match found.");
+	        }
 	    }
 
 			    // Delete

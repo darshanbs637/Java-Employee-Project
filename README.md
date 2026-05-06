@@ -6,6 +6,7 @@
 ## 📌 Project Overview
 
 This is a **mini Employee Management System (EMS)** to be built using **Core Java (console-based)**.
+This repository can also be used for simple Git workflow demonstrations.
 
 - 👥 Team Size: 4–5 members  
 - ⏱ Duration: 3–4 hours  
